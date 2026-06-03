@@ -39,28 +39,28 @@ const gitCommands = {
         out: "Switched to branch 'master'\nUpdating a8b3d2f..c7a2f1b\nFast-forward\n index.html | 15 ++++++++++-----\n script.js | 42 +++++++++++++++++++++---------\n 2 files changed, 45 insertions(+), 12 deletions(-)"
     },
     10: {
-        cmd: "git remote add origin https://github.com/sadkiyassine271/nom-du-repo.git\ngit push -u origin master",
-        out: "Enumerating objects: 7, done.\nCounting objects: 100% (7/7), done.\nDelta compression using up to 8 threads\nCompressing objects: 100% (6/6), done.\nWriting objects: 100% (7/7), 785 bytes | 785.00 KiB/s, done.\nTo https://github.com/sadkiyassine271/nom-du-repo.git\n * [new branch]      master -> master\nbranch 'master' set up to track 'origin/master'."
+        cmd: "git remote add origin https://github.com/sadkiyassine271-maker/yassine-projet.git\ngit push -u origin master",
+        out: "Enumerating objects: 7, done.\nCounting objects: 100% (7/7), done.\nDelta compression using up to 8 threads\nCompressing objects: 100% (6/6), done.\nWriting objects: 100% (7/7), 785 bytes | 785.00 KiB/s, done.\nTo https://github.com/sadkiyassine271-maker/yassine-projet.git\n * [new branch]      master -> master\nbranch 'master' set up to track 'origin/master'."
     },
     11: {
-        cmd: "# Connectez-vous sur app.netlify.com\n# Créez un nouveau site à partir de Git et sélectionnez votre dépôt.",
-        out: "# Liaison établie. Déploiement en cours..."
+        cmd: "# Connectez-vous sur vercel.com\n# Créez un nouveau projet à partir de Git et sélectionnez votre dépôt.",
+        out: "# Liaison établie. Déploiement en cours sur Vercel..."
     },
     12: {
-        cmd: "curl -I https://votre-site.netlify.app",
-        out: "HTTP/2 200\ncontent-type: text/html; charset=UTF-8\nserver: Netlify\nx-nf-request-id: 01H2AX..."
+        cmd: "curl -I https://yassine-projet-eunvdz97v-ifiag.vercel.app/",
+        out: "HTTP/2 200\ncontent-type: text/html; charset=UTF-8\nserver: Vercel\nx-vercel-id: ..."
     },
     13: {
         cmd: "git add .\ngit commit -m \"Correction de style et amélioration CI/CD\"\ngit push origin master",
-        out: "To https://github.com/sadkiyassine271/nom-du-repo.git\n   c7a2f1b..f2d4e8a  master -> master\n# Netlify va automatiquement redéployer le site !"
+        out: "To https://github.com/sadkiyassine271-maker/yassine-projet.git\n   c7a2f1b..f2d4e8a  master -> master\n# Vercel va automatiquement redéployer le site !"
     },
     14: {
-        cmd: "echo \"# Mon Projet Git Netlify\" > README.md\necho \"Lien Netlify : https://votre-site.netlify.app\" >> README.md\ngit add README.md\ngit commit -m \"Ajout du README\"\ngit push origin master",
-        out: "[master f2d4e8a] Ajout du README\n 1 file changed, 2 insertions(+)\nTo https://github.com/sadkiyassine271/nom-du-repo.git\n   f2d4e8a..e8c7b6d  master -> master"
+        cmd: "echo \"# Mon Projet Git Vercel\" > README.md\necho \"Lien Vercel : https://yassine-projet-eunvdz97v-ifiag.vercel.app/\" >> README.md\ngit add README.md\ngit commit -m \"Ajout du README\"\ngit push origin master",
+        out: "[master f2d4e8a] Ajout du README\n 1 file changed, 2 insertions(+)\nTo https://github.com/sadkiyassine271-maker/yassine-projet.git\n   f2d4e8a..e8c7b6d  master -> master"
     },
     15: {
         cmd: "git remote -v",
-        out: "origin  https://github.com/sadkiyassine271/nom-du-repo.git (fetch)\norigin  https://github.com/sadkiyassine271/nom-du-repo.git (push)"
+        out: "origin  https://github.com/sadkiyassine271-maker/yassine-projet.git (fetch)\norigin  https://github.com/sadkiyassine271-maker/yassine-projet.git (push)"
     }
 };
 
@@ -98,7 +98,7 @@ function loadProgress() {
     const githubText = document.getElementById("github-url-text");
     if (githubText) {
         if (progress[10] || progress[15]) {
-            githubText.innerText = "https://github.com/sadkiyassine271/iffiag-git-project";
+            githubText.innerText = "https://github.com/sadkiyassine271-maker/yassine-projet";
             githubText.style.color = "var(--success-color)";
         } else {
             githubText.innerText = "Non lié (Ajouté à l'étape 10)";

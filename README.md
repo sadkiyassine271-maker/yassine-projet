@@ -7,8 +7,8 @@ Ce projet est un tableau de bord interactif conçu pour suivre et valider la pro
 - **Email** : sadkiyassine271@iffiag.com
 - **Dépôt GitHub** : https://github.com/sadkiyassine271-maker/yassine-projet
 
-## 🌐 Déploiement Netlify
-- **URL de l'application** : [En attente de déploiement] (ex: https://yassine-git-project.netlify.app)
+## 🌐 Déploiement Vercel
+- **URL de l'application** : https://yassine-projet-eunvdz97v-ifiag.vercel.app/
 
 ---
 
@@ -29,8 +29,9 @@ Ce projet est un tableau de bord interactif conçu pour suivre et valider la pro
 - [x] **Exercice 7** : Création et bascule sur la branche `iffiag-exp`
 - [x] **Exercice 8** : Modification et commit sur la branche `iffiag-exp`
 - [x] **Exercice 9** : Fusion de la branche `iffiag-exp` dans `master`
-- [ ] **Exercice 10** : Liaison distante et Push vers GitHub
-- [ ] **Exercice 11** : Déploiement sur Netlify
-- [ ] **Exercice 12** : Vérification du déploiement
-- [ ] **Exercice 13** : Test du CI/CD (déploiement continu)
-- [ ] **Exercice 14** : Création de ce fichier README.md et intégration du lien Netlify
+- [x] **Exercice 10** : Liaison distante et Push vers GitHub
+- [x] **Exercice 11** : Déploiement (Vercel)
+- [x] **Exercice 12** : Vérification du déploiement
+- [x] **Exercice 13** : Test du CI/CD (déploiement continu)
+- [x] **Exercice 14** : Création de ce fichier README.md et intégration du lien de déploiement
+- [x] **Exercice 15** : URL du dépôt GitHub fourni
